@@ -1,0 +1,239 @@
+body {
+    background-color: hsl(233, 47%, 7%);
+    
+}
+
+p {
+    font-family: "Inter", sans-serif;
+    color: hsla(0, 0%, 100%, 0.65);
+    font-weight: 400;
+    text-align: left;
+    font-size: .8rem;
+    line-height: 1.4rem;
+
+}
+
+h1 {
+    font-family: "Inter";
+    font-size: 2rem;
+    color: white;
+    font-weight: 700;
+    text-align: left;
+    padding-bottom: .4rem;
+}
+
+.space {
+    margin-top: 2rem;
+}
+.main-box {
+    display: flex;
+    flex-flow: row-reverse;
+    background-color: hsl(244, 38%, 16%);
+    margin: 10% 10% 10% 10%;
+    width: 80%;
+    border-radius: .5rem;
+}
+
+.image-office {
+    position: relative;
+    border-radius: 0 .5rem 0.5rem 0;
+}
+
+.image-office img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0 .5rem 0.5rem 0;
+}
+
+.image-office .image-desktop {
+    display:block;
+}
+
+.image-office .image-mobile {
+    display:none;
+}
+
+.image-office::after {
+    position:absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 0 0.5rem 0.5rem 0;
+    left: 0;
+    top: 0;
+    background-color: hsla(277, 64%, 45%, 0.7);
+    z-index:1000;
+}
+
+
+
+.text-area {
+    width: 40%;
+    padding: 5% 7% 5% 7%;
+     
+    
+    
+
+}
+
+.spanned-heads {
+    display: flex;
+    justify-content: space-between;
+
+    width: 80%;
+    
+    text-align: left;
+    color: hsla(0, 0%, 100%);
+    margin-top: 24%;
+    
+    font-family: "Inter", sans-serif;
+    
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.4rem;
+    
+
+}
+
+.spanned-text {
+
+    width: 80%;
+    
+    text-align: left;
+    color: hsla(0, 0%, 100%, 0.65);
+ 
+    
+    font-family: "Lexend Deca", sans-serif;
+    
+    font-weight: 400;
+    font-size: .75rem;
+    line-height: 1.6rem;
+    letter-spacing: .05rem;
+    
+
+}
+
+.main-text {
+    width: 80%;
+    padding: 5%;
+    font-size: 11px; 
+    text-align: left;
+    color: white;
+
+}
+
+.purple-text {
+    color:hsl(277, 64%, 61%);
+    font-family: "Inter";
+    font-size: 2rem;
+ 
+    font-weight: 700;
+    text-align: left;
+}
+
+@media only screen and (max-width: 375px) {
+
+    body {
+      text-align: center;
+    }
+
+
+    .main-box {
+        display: flex;
+        flex-flow: column;
+        margin: 18% 5% 10% 5%;
+        width: 90%;
+        border-radius: .5rem;
+    }
+
+    .text-area {
+       
+        width: 88%;
+        text-align: center;
+
+    }
+
+
+    .image-office {
+        border-radius: 0.5rem 0.5rem 0 0;
+    }
+    
+    .image-office img {
+        border-radius: 0.5rem 0.5rem 0 0;
+    }
+
+    .image-office .image-desktop {
+        display:none;
+    }
+    
+    .image-office .image-mobile {
+        display:block;
+    }
+    
+    .image-office::after {
+        border-radius: 0.5rem 0.5rem 0 0;
+    }
+
+    .main-text {
+
+        text-align: center;
+          
+    }
+    
+    .purple-text {
+
+        text-align: center;
+
+    }
+
+    p {
+
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
+
+    }
+
+    h1 {    
+
+    text-align: center;
+    width: 100%;
+
+    padding-bottom: .4rem;
+
+    }
+
+    .spanned-heads {
+        
+        display: flex;
+        flex-flow: column;
+        justify-content: space-evenly;
+        
+        text-align: center;
+        width: 80%;
+        margin-left: 10%;
+    
+    }
+
+    .spanned-heads>div {
+        
+        padding-bottom: 8%;
+    
+    }
+    
+    .spanned-text {
+        
+        text-align: center;
+        padding-bottom: 38%;
+
+    }
+}
+
+/*
+<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+<style>
+  .attribution { font-size: 11px; text-align: center; }
+  .attribution a { color: hsl(228, 45%, 44%); }
+</style>
+*/
